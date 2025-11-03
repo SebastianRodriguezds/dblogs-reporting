@@ -52,3 +52,24 @@ This will insert:
 Once the data is inserted, run:
 python scripts/generate_reports.py
 
+The generated filles will be saeved automatically in the reports/ folder:
+* CVS Reports
+    * top_users_errors.csv → Top 5 users with the most ERROR logs
+    * all_logs.csv → Complete log dataset
+* Visualizations
+    * log_type_counts.png → Distribution of log types
+    * top_users_errors.png → Top users by ERROR count
+
+## Example Outputs
+Chart1: Log Type Counts
+Chart2: Top 5 Users with Most ERROR Logs
+
+## Notes
+* The reports/ directory is automatically created if it doesn't exist.
+* You can modify the SQL queries or visualizations to fit your own data.
+* Ensure your MySQL server is running before executing the scripts.
+
+# Author
+Sebastian
+sebastianrodriguezds@gmail.com
+Project: System Logs Report Generator
